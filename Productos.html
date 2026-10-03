@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Productos de Unción de Dios</title>
+
+    <link rel="stylesheet" href="Productos.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         ENCABEZADO
+    ========================== -->
+
+    <header>
+
+        <div class="logo">
+            <h1>UNCIÓN DE DIOS</h1>
+            <p>Tienda Cristiana</p>
+        </div>
+
+        <nav>
+            <a href="tienda.html">Inicio</a>
+            <a href="info de devocionales.html"> Información de Devocionales</a>
+            <a href="Productos.html">Productos de Unción de Dios</a>
+    
+        </nav>
+
+        <button class="carrito-btn" onclick="abrirCarrito()">
+            🛒 Carrito
+            <span id="cantidad-carrito">0</span>
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         PORTADA
+    ========================== -->
+<center>
+    <img src="unción de Dios.jpeg" alt=""> 
+</center>
+    <section class="portada">
+
+        <div class="portada-contenido">
+
+            <span>TIENDA CRISTIANA</span>
+
+            <h2>
+                Productos para fortalecer
+                <strong>TU FE</strong>
+            </h2>
+
+            <p>
+                Biblias, separadores, devocionales y
+                artículos cristianos seleccionados
+                especialmente para ti.
+            </p>
+
+            <a href="#productos" class="boton-principal">
+                VER PRODUCTOS
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PRODUCTOS
+    ========================== -->
+
+    <section id="productos" class="productos-seccion">
+
+        <div class="titulo">
+
+            <span>NUESTROS PRODUCTOS</span>
+
+            <h2>Productos Cristianos</h2>
+
+            <p>
+                Encuentra artículos para acompañar
+                tu estudio de la Palabra de Dios.
+            </p>
+
+        </div>
+
+
+        <div class="productos-grid">
+
+
+            <!-- BIBLIA -->
+
+            <div class="producto">
+
+                <div class="producto-imagen">
+                    <img
+                        src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=700&q=80"
+                        alt="Biblia"
+                    >
+                </div>
+
+                <div class="producto-info">
+
+                    <span class="categoria">
+                        BIBLIAS
+                    </span>
+
+                    <h3>Biblia Reina-Valera</h3>
+
+                    <p>
+                        Biblia de estudio con diseño
+                        elegante y resistente.
+                    </p>
+
+                    <div class="precio">
+                        $85.000 COP
+                    </div>
+
+                    <button
+                        class="comprar"
+                        onclick="agregarCarrito(
+                            'Biblia Reina-Valera',
+                            85000
+                        )"
+                    >
+                        Comprar
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- SEPARADOR -->
+
+            <div class="producto">
+
+                <div class="producto-imagen">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=700&q=80"
+                        alt="Separador bíblico"
+                    >
+
+                </div>
+
+                <div class="producto-info">
+
+                    <span class="categoria">
+                        ACCESORIOS
+                    </span>
+
+                    <h3>Separador Bíblico</h3>
+
+                    <p>
+                        Separador elegante para acompañar
+                        tu lectura bíblica.
+                    </p>
+
+                    <div class="precio">
+                        $8.000 COP
+                    </div>
+
+                    <button
+                        class="comprar"
+                        onclick="agregarCarrito(
+                            'Separador Bíblico',
+                            8000
+                        )"
+                    >
+                        Comprar
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- DEVOCIONAL -->
+
+            <div class="producto">
+
+                <div class="producto-imagen">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=700&q=80"
+                        alt="Devocional"
+                    >
+
+                </div>
+
+                <div class="producto-info">
+
+                    <span class="categoria">
+                        DEVOCIONALES
+                    </span>
+
+                    <h3>Devocional Diario</h3>
+
+                    <p>
+                        Reflexiones y lecturas para
+                        fortalecer tu relación con Dios.
+                    </p>
+
+                    <div class="precio">
+                        $30.000 COP
+                    </div>
+
+                    <button
+                        class="comprar"
+                        onclick="agregarCarrito(
+                            'Devocional Diario',
+                            30000
+                        )"
+                    >
+                        Comprar
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CUADERNO -->
+
+            <div class="producto">
+
+                <div class="producto-imagen">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=700&q=80"
+                        alt="Cuaderno cristiano"
+                    >
+
+                </div>
+
+                <div class="producto-info">
+
+                    <span class="categoria">
+                        ESTUDIO BÍBLICO
+                    </span>
+
+                    <h3>Cuaderno de Estudio</h3>
+
+                    <p>
+                        Ideal para tomar apuntes,
+                        reflexiones y estudios bíblicos.
+                    </p>
+
+                    <div class="precio">
+                        $22.000 COP
+                    </div>
+
+                    <button
+                        class="comprar"
+                        onclick="agregarCarrito(
+                            'Cuaderno de Estudio',
+                            22000
+                        )"
+                    >
+                        Comprar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CARRITO
+    ========================== -->
+
+    <div id="carrito" class="carrito">
+
+        <div class="carrito-contenido">
+
+            <button
+                class="cerrar"
+                onclick="cerrarCarrito()"
+            >
+                ×
+            </button>
+
+            <h2>Tu carrito</h2>
+
+            <div id="lista-carrito">
+                <p class="carrito-vacio">
+                    Tu carrito está vacío.
+                </p>
+            </div>
+
+            <div class="total">
+
+                <span>Total:</span>
+
+                <strong id="total">
+                    $0 COP
+                </strong>
+
+            </div>
+
+            <button
+                class="checkout"
+                onclick="abrirPago()"
+            >
+                Continuar
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         PAGO DE DEMOSTRACIÓN
+    ========================== -->
+
+    <div id="pago" class="pago">
+
+        <div class="pago-contenido">
+
+            <button
+                class="cerrar"
+                onclick="cerrarPago()"
+            >
+                ×
+            </button>
+
+            <span class="categoria">
+                CHECKOUT
+            </span>
+
+            <h2>Finalizar pedido</h2>
+
+            <p>
+                Esta sección es una demostración
+                de compra para el proyecto.
+            </p>
+
+
+            
+        <form
+            class="suggestion-form"
+            action="mailto:sebastiantabares334@gmail.com"
+            method="post"
+            enctype="text/plain"
+        >
+
+            <label for="nombre">
+                Nombre
+            </label>
+
+            <input
+                type="text"
+                id="nombre"
+                name="Nombre"
+                placeholder="Escribe tu nombre"
+                required
+            >
+
+
+            <label for="correo">
+                Correo electrónico
+            </label>
+
+            <input
+                type="email"
+                id="correo"
+                name="Correo"
+                placeholder="ejemplo@gmail.com"
+                required
+            >
+
+
+            <label for="asunto">
+                Compra del articulo
+            </label>
+
+            <input
+                type="text"
+                id="Compra del articulo"
+                name="Compra del articulo"
+                placeholder="Compra del articulo"
+                required
+            >
+
+
+            <label for="mensaje">
+                Buzón de sugerencia
+            </label>
+
+            <textarea
+                id="mensaje"
+                name="Mensaje"
+                rows="7"
+                placeholder="Escribe tú sugerencia o pregunta..."
+                required
+            ></textarea>
+
+
+            <button
+                type="submit"
+                class="gold-btn"
+            >
+                Enviar mensaje
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+            <h3>Método de pago</h3>
+
+            <div class="metodos">
+
+                <button id="btnNequi" class="nequi-btn">
+    🟪 Pagar con Nequi
+</button>
+
+<div id="nequiInfo" class="nequi-info">
+    <h3>Pago por Nequi</h3>
+
+    <p>Realiza el pago al siguiente número:</p>
+
+    <strong>323 495 5422</strong>
+
+    <p class="nequi-nota">
+        Después de realizar el pago, conserva el comprobante y enviarlo al número que se pago
+    </p>
+<a href="Productos.html">
+    <button id="cerrarNequi" class="cerrar-nequi">
+        Cerrar
+    </button>
+    </a>
+</div>
+
+                
+
+            </div>
+
+<a href="Productos.html">
+            <button
+                class="pagar-demo"
+                onclick="compraDemo()"
+            >
+                REALIZAR PEDIDO DE DEMOSTRACIÓN
+            </button>
+            </a>
+
+        
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+
+    <section id="contacto" class="contacto">
+
+        <div>
+
+            <span>¿TIENES ALGUNA PREGUNTA?</span>
+
+            <h2>Contáctanos</h2>
+
+           <form
+            class="suggestion-form"
+            action="mailto:sebastiantabares334@gmail.com"
+            method="post"
+            enctype="text/plain"
+        >
+
+            <label for="nombre">
+                Nombre
+            </label>
+
+            <input
+                type="text"
+                id="nombre"
+                name="Nombre"
+                placeholder="Escribe tu nombre"
+                required
+            >
+
+
+            <label for="correo">
+                Correo electrónico
+            </label>
+
+            <input
+                type="email"
+                id="correo"
+                name="Correo"
+                placeholder="ejemplo@gmail.com"
+                required
+            >
+
+
+            <label for="asunto">
+                Asunto
+            </label>
+
+            <input
+                type="text"
+                id="asunto"
+                name="Asunto"
+                placeholder="Escribe el asunto"
+                required
+            >
+
+
+            <label for="mensaje">
+                Mensaje
+            </label>
+
+            <textarea
+                id="mensaje"
+                name="Mensaje"
+                rows="7"
+                placeholder="Escribe aquí tu mensaje..."
+                required
+            ></textarea>
+
+
+            <button
+                type="submit"
+                class="gold-btn"
+            >
+                Enviar mensaje
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <h3>UNCIÓN DE DIOS</h3>
+
+        <p>
+            Productos cristianos para fortalecer tu fe.
+        </p>
+
+        <p class="copyright">
+            © 2026 Unción de Dios
+        </p>
+
+    </footer>
+
+
+    <script src="tienda.js"></script>
+
+</body>
+</html>
+<script>
+    let carrito = [];
+
+
+// =========================
+// AGREGAR PRODUCTO
+// =========================
+
+function agregarCarrito(nombre, precio) {
+
+    carrito.push({
+        nombre: nombre,
+        precio: precio
+    });
+
+    actualizarCarrito();
+
+    abrirCarrito();
+}
+
+
+// =========================
+// ACTUALIZAR CARRITO
+// =========================
+
+function actualizarCarrito() {
+
+    const lista = document.getElementById("lista-carrito");
+
+    const cantidad =
+        document.getElementById("cantidad-carrito");
+
+    const total =
+        document.getElementById("total");
+
+
+    cantidad.textContent = carrito.length;
+
+
+    if (carrito.length === 0) {
+
+        lista.innerHTML =
+            '<p class="carrito-vacio">Tu carrito está vacío.</p>';
+
+        total.textContent = "$0 COP";
+
+        return;
+    }
+
+
+    lista.innerHTML = "";
+
+    let totalCompra = 0;
+
+
+    carrito.forEach((producto, indice) => {
+
+        totalCompra += producto.precio;
+
+
+        const item =
+            document.createElement("div");
+
+        item.className = "item-carrito";
+
+
+        item.innerHTML = `
+
+            <div>
+
+                <h4>${producto.nombre}</h4>
+
+                <p>
+                    $${producto.precio.toLocaleString("es-CO")} COP
+                </p>
+
+            </div>
+
+            <button
+                class="eliminar"
+                onclick="eliminarProducto(${indice})"
+            >
+                Eliminar
+            </button>
+
+        `;
+
+
+        lista.appendChild(item);
+
+    });
+
+
+    total.textContent =
+        "$" +
+        totalCompra.toLocaleString("es-CO") +
+        " COP";
+}
+
+
+// =========================
+// ELIMINAR PRODUCTO
+// =========================
+
+function eliminarProducto(indice) {
+
+    carrito.splice(indice, 1);
+
+    actualizarCarrito();
+}
+
+
+// =========================
+// ABRIR CARRITO
+// =========================
+
+function abrirCarrito() {
+
+    document.getElementById("carrito").style.display =
+        "flex";
+}
+
+
+// =========================
+// CERRAR CARRITO
+// =========================
+
+function cerrarCarrito() {
+
+    document.getElementById("carrito").style.display =
+        "none";
+}
+
+
+// =========================
+// ABRIR PAGO
+// =========================
+
+function abrirPago() {
+
+    if (carrito.length === 0) {
+
+        alert("Primero agrega un producto al carrito.");
+
+        return;
+    }
+
+
+    cerrarCarrito();
+
+    document.getElementById("pago").style.display =
+        "flex";
+}
+
+
+// =========================
+// CERRAR PAGO
+// =========================
+
+function cerrarPago() {
+
+    document.getElementById("pago").style.display =
+        "none";
+}
+
+
+// =========================
+// COMPRA DE DEMOSTRACIÓN
+// =========================
+
+function compraDemo() {
+
+    alert(
+        "Recuerde guardar el comprovante y enviarlo al siguiente número " +
+        "323 495 5422"
+    );
+
+    carrito = [];
+
+    actualizarCarrito();
+
+    cerrarPago();
+}
+</script>

@@ -1,0 +1,502 @@
+/* ============================= */
+/* CONFIGURACIÓN GENERAL */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: white;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+/* ============================= */
+/* ENCABEZADO */
+/* ============================= */
+
+header {
+    width: 100%;
+    padding: 22px 8%;
+
+    background: #050505;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #c9a227;
+
+    position: relative;
+    z-index: 10;
+}
+
+.logo h1 {
+    color: #d4af37;
+    font-size: 27px;
+    letter-spacing: 2px;
+}
+
+.logo p {
+    color: #999;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+
+/* ============================= */
+/* PORTADA DEVOCIONALES */
+/* ============================= */
+
+.devocional-hero {
+
+    min-height: 75vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(120, 75, 0, 0.25),
+            transparent 60%
+        ),
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.95)
+        );
+
+    border-bottom: 1px solid #332600;
+}
+
+
+.devocional-contenido {
+    max-width: 850px;
+}
+
+
+.etiqueta {
+    color: #d4af37;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    font-weight: bold;
+}
+
+
+.devocional-contenido h2 {
+
+    font-size: clamp(40px, 6vw, 75px);
+
+    margin: 20px 0;
+
+    color: #d4af37;
+
+    text-shadow:
+        0 0 10px rgba(212,175,55,0.4),
+        0 0 30px rgba(212,175,55,0.15);
+}
+
+
+.devocional-contenido p {
+
+    color: #d0d0d0;
+
+    font-size: 19px;
+
+    line-height: 1.8;
+
+    max-width: 700px;
+
+    margin: auto auto 35px;
+}
+
+
+/* ============================= */
+/* BOTÓN DISCORD */
+/* ============================= */
+
+.boton-discord {
+
+    display: inline-block;
+
+    padding: 16px 35px;
+
+    background: linear-gradient(
+        135deg,
+        #d4af37,
+        #a47c11
+    );
+
+    color: #050505;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 0 20px rgba(212,175,55,0.25);
+}
+
+
+.boton-discord:hover {
+
+    transform: translateY(-4px);
+
+    background: #f0cf62;
+
+    box-shadow:
+        0 0 30px rgba(212,175,55,0.45);
+}
+
+
+/* ============================= */
+/* INFORMACIÓN */
+/* ============================= */
+
+.informacion-devocionales {
+
+    padding: 100px 8%;
+
+    background: #0b0b0b;
+}
+
+
+.titulo-seccion {
+
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: auto;
+
+    margin-bottom: 60px;
+}
+
+
+.titulo-seccion span {
+
+    color: #d4af37;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    font-weight: bold;
+}
+
+
+.titulo-seccion h2 {
+
+    font-size: 40px;
+
+    margin: 15px 0;
+
+    color: white;
+}
+
+
+.titulo-seccion p {
+
+    color: #999;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+}
+
+
+/* ============================= */
+/* TARJETAS */
+/* ============================= */
+
+.devocional-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+.devocional-card {
+
+    background: #111;
+
+    border: 1px solid #292929;
+
+    padding: 35px;
+
+    min-height: 250px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+
+.devocional-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 3px;
+
+    height: 100%;
+
+    left: 0;
+
+    top: 0;
+
+    background: #d4af37;
+}
+
+
+.devocional-card:hover {
+
+    transform: translateY(-7px);
+
+    border-color: #8d6f1d;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.4);
+}
+
+
+.numero {
+
+    color: #5f4b16;
+
+    font-size: 35px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+
+.devocional-card h3 {
+
+    color: #d4af37;
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+
+.devocional-card p {
+
+    color: #999;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+}
+
+
+/* ============================= */
+/* SECCIÓN DISCORD */
+/* ============================= */
+
+.discord {
+
+    padding: 110px 20px;
+
+    text-align: center;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(212,175,55,0.12),
+            transparent 60%
+        ),
+
+        #050505;
+
+    border-top: 1px solid #211b08;
+
+    border-bottom: 1px solid #211b08;
+}
+
+
+.discord-contenido {
+
+    max-width: 750px;
+
+    margin: auto;
+}
+
+
+.discord-contenido span {
+
+    color: #d4af37;
+
+    letter-spacing: 4px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.discord-contenido h2 {
+
+    font-size: 45px;
+
+    margin: 18px 0;
+}
+
+
+.discord-contenido p {
+
+    color: #999;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+
+    background: #030303;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    border-top: 1px solid #302500;
+}
+
+
+footer h3 {
+
+    color: #d4af37;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+
+footer p {
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+footer .copyright {
+
+    margin-top: 25px;
+
+    color: #444;
+
+    font-size: 12px;
+}
+
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 700px) {
+
+    header {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+    }
+
+
+    nav {
+
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .devocional-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .titulo-seccion h2 {
+
+        font-size: 32px;
+    }
+
+
+    .discord-contenido h2 {
+
+        font-size: 34px;
+    }
+
+}
+img{
+    padding: 20px 8%;
+    margin: 20px;
+    width: 500px;
+    height: auto;
+    max-width:150%;
+    border-radius:20px;
+    box-shadow:0 0 40px orange;
+}
